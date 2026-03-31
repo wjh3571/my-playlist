@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최애 앨범 소개</title>
+
+    <style>
+        /* 여기서부터 자유롭게 코딩을 시작하세요! */
+        /* (강사님이 주신 필수 색상 2개 잊지 마세요!) */
+        @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=DotGothic16&family=Press+Start+2P&display=swap');
+
+
+
+        .lyrics-section {
+            font-family: "dotgothic16";
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            /* 테두리 두께를 크기에 포함시키는 마법의 속성 (나중에 배웁니다!) */
+            box-sizing: border-box;
+        }
+
+        body {
+            /* 0. 배경색과 기본 폰트 설정, 전체 여백 */
+            padding: 20px;
+            background: linear-gradient(135deg, #4b0082, #3f045a);
+            color: rgb(43, 197, 43);
+        }
+
+
+        /* 1. 타이포그래피 (h1, h2, .artist-name 등) 폰트, 색상, 크기, 정렬 */
+        * {
+            text-align: center;
+        }
+
+        h1,
+        h2,
+        p,
+        ul {
+            font-size: 30px;
+        }
+
+        table {
+            font-size: 24 px;
+        }
+
+        /* 2. 가사 영역 (.lyrics-box) 및 하이라이트 글자(.highlight) 강조 */
+        .lyrics-box {
+            background: rgba(0, 0, 0, 0.534);
+            border-radius: 10px;
+        }
+
+        /* 3. 목록(#charm-list) 불릿 기호 지우고 예쁘게 꾸미기 */
+        ul {
+            list-style-type: none;
+        }
+
+
+        /* 4. 표(#track-table) 한 줄 테두리(border-collapse), 패딩, 짝수줄 배경색(:nth-child) */
+        #track-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        table {
+            font-size: 20px;
+        }
+
+        /* 5. 버튼(.listen-btn) 꾸미고 호버(:hover) 효과 넣기 */
+        .listen-btn {
+            font-size: 19.5px;
+            background-color: #24e624;
+            color: #4b0082;
+        }
+
+        .listen-btn:hover {
+            background-color: #ff007f;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="album-header">
+        <p class="artist-name">J-POP</p>
+        <h1>5조 mix</h1>
+        <p class="subtitle"> 플레이리스트</p>
+    </header>
+
+    <section class="lyrics-section">
+        <h2>🎵 킬링 파트 가사</h2>
+        <div class="lyrics-box">
+            <p>愛してると ごめんねの差ってまるで月と太陽ね</p>
+            <p class="highlight">ちっとこんがらがって 目が眩んだだけなんだわ</p>
+            <p>いつまでどこまでなんて</p>
+            <p>so,get away</p>
+            <p>春の中 あなたを見た</p>
+            <p>どう、頑張っても僕は普通</p>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <h2>✨ 입덕 포인트</h2>
+        <ul id="charm-list">
+            <li>각각의 개성있는 노래 분위기</li>
+            <li>계속 듣게되는 중독적인 노래</li>
+            <li>듣기 좋은 목소리</li>
+        </ul>
+    </section>
+
+    <section class="track-section">
+        <h2>🎧 추천 플레이리스트</h2>
+        <table id="track-table">
+            <thead>
+                <tr>
+                    <th>Track</th>
+                    <th>곡명</th>
+                    <th>Play Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>クスシキ</td>
+                    <td>3:45</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Shinigami</td>
+                    <td>2:00</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>ray</td>
+                    <td>2:29</td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>I Really Want to Stay at Your House</td>
+                    <td>4:06</td>
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td>Same Blue</td>
+                    <td>4:14</td>
+                </tr>
+                <tr>
+                    <td>06</td>
+                    <td>propose</td>
+                    <td>2:59</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer id="album-footer">
+        <button class="listen-btn">전곡 스밍하러 가기</button>
+    </footer>
+</body>
+
+</html>
